@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0" />
+    <title>LinkTwin</title>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178005094-1');
+</script>
+        <script>
+    window.onload = function() {
+    <!-- Deep link URL for existing users with app already installed on their device -->
+        window.location = 'intent://www.youtube.com/watch?v=J6Z3_M270zU#Intent;package=com.google.android.youtube;scheme=https;end';
+        window.location = 'vnd.youtube://www.youtube.com/watch?v=J6Z3_M270zU';
+        
+    <!-- Download URL (TUNE link) for new users to download the app -->
+        setTimeout("window.location = 'https://www.youtube.com/watch?v=J6Z3_M270zU';", 1000);
+    }
+    </script>
+    </head>
+</html>
